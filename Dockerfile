@@ -8,10 +8,10 @@ RUN apt-get install -y build-essential \
     && apt-get install -y nano \
     && apt-get install -y git
 
-RUN cd home
-RUN git clone https://github.com/biomed12/simplest-cmake.git
-RUN mv simplest-cmake app
-RUN cd app && mkdir build && cd build \
+RUN cd /home \
+    && git clone https://github.com/biomed12/simplest-cmake.git \
+    && mv simplest-cmake app \
+    && cd app && mkdir build && cd build \
     && cmake ..\
     && cmake --build .\
     && ./main
