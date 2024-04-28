@@ -8,7 +8,11 @@ RUN apt-get install -y build-essential \
     && apt-get install -y nano \
     && apt-get install -y git \
     && apt-get install -y clang-format \
-    && apt-get install -y curl
+    && apt-get install -y curl \
+    && apt-get install -y python3-full \
+    && apt-get install -y python3-pip \
+    && apy-get install -y python3-requests \
+    && apt-get install -y libssl-dev
 
 RUN cd /home \
     && git clone https://github.com/biomed12/simplest-cmake.git \
