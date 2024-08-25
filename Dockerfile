@@ -15,7 +15,8 @@ RUN apt-get install -y build-essential \
     && apt-get install -y python3-requests \
     && apt-get install -y libssl-dev \
     && apt-get install -y libbenchmark-dev \
-    && apt-get install -y libgtest-dev
+    && apt-get install -y libgtest-dev \
+    && apt-get install -y libgmock-dev
 
 RUN cd /usr/lib/aarch64-linux-gnu/ \
     && ln -s libboost_url.so.1.81.0 libboost_url.so
