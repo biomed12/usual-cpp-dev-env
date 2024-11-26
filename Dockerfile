@@ -16,7 +16,8 @@ RUN apt-get install -y build-essential \
     && apt-get install -y libbenchmark-dev \
     && apt-get install -y libgtest-dev \
     && apt-get install -y libgmock-dev \
-    && apt-get install -y libspdlog-dev
+    && apt-get install -y libspdlog-dev \
+    && apt-get install -y gbd
 
 RUN cd /home \
     && git clone https://github.com/biomed12/simplest-cmake.git \
